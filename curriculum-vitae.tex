@@ -1,10 +1,14 @@
 %% Author: Henry Burgess
 
-\documentclass[a4paper]{article}
+\documentclass{article}
 
+%% Setup packages
 \usepackage{geometry}
-\usepackage{hyperref}
+\geometry{a4paper, portrait, margin=0.5in}
+
 \usepackage{longtable}
+
+\usepackage{hyperref}
 \hypersetup{
 	colorlinks=false,
 	linkcolor=blue,
@@ -12,106 +16,133 @@
 	urlcolor=black,
 }
 
-\geometry{a4paper, portrait, margin=0.55in}
-
 \begin{document}
+	%%	Header section with name and contact details
+	%%	Name
+	\begin{minipage}{2.5in}
+		\huge\textbf{Henry Burgess} 
+	\end{minipage}
+	\hfill
+	%%	Contact details
+	\begin{minipage}{3in}
+		\textbf{Phone:}  +1 (314) 891-2285 \\
+		\hfill \textbf{Address:} 4400 Lindell Blvd Apt. 19E, \\
+		St. Louis, MO USA \\
+		\textbf{Email:} \href{mailto:henryjburg@gmail.com}{henryjburg@gmail.com} \\
+		\textbf{ORCID:} 0000-0002-3481-952X
+	\end{minipage}
+	%%	Begin tabulated layout
+	\begin{longtable}{r | p{13cm}} 	
+		\large\textbf{Education} 		  	& \large\textbf{Bachelor of Engineering (Honours)} \\
+											& \textbf{The University of Queensland} \\
+											& \textit{January 2017 – June 2021} \\
+											& \textbf{Major:} Software \\
+											& \textbf{Honours Class:} I \\
+											& \textbf{Thesis title:} ``Implementation of Online Neuropsychological Tasks using JavaScript" \\
+											& \textbf{Thesis supervision:} Prof. Linda Richards AO, Dr. Ryan Dean, Mr. Richard Thomas \\
+											& \textbf{GPA:} 3.81 (6.67) \\
+											& \\
 
-\begin{center}
-	\Huge{Henry Burgess}
-\end{center}
+		\large\textbf{Research Experience}  & \large\textbf{Washington University in St. Louis (Software Engineer II)} \\
+											& \textit{September 2021 - Present} \\
+											& Member of the \textit{Brain Development and Disorders Laboratory} and continuing to enable scientific investigation by innovating novel techniques for implementing complex and reliable cognitive tasks online. Primary research interests include the integration of modern web tools with online cognitive tasks and the optimization of software development processes to enable reproducible and reliable data collection using online tasks. Responsible for the entire software development life-cycle. \\ 
+											& \\
 
-\begin{longtable}{r p{13.5cm}} 
-	\textbf{Contact} 		   \vline &	   \textbf{Phone:}  +1 (314) 891-2285 \\ 
-										\vline &	\textbf{Address:} 4400 Lindell Blvd Apt. 19E, St. Louis, MO USA \\
-										\vline &	\textbf{Email:} \href{mailto:henryjburg@gmail.com}{henryjburg@gmail.com} \\
-										\vline &	\textbf{LinkedIn:} \href{https://www.linkedin.com/in/henryjburg/}{@henryjburg} \\			
-										\vline &	\textbf{Twitter:} \href{https://www.twitter.com/henryjburg/}{@henryjburg} \\
-										\vline &	\textbf{GitHub:} \href{https://github.com/henry-burgess}{@henry-burgess} \\
-										\vline & \\
-										
-	\textbf{Education} 		  \vline & \textbf{Bachelor of Engineering (Honours), The University of Queensland} \\
-										\vline & \textit{January 2017 – June 2021} \\
-										\vline & \textbf{Major:} Software \\
-										\vline & \textbf{Honours Class:} I \\
-										\vline & \textbf{Thesis title:} ``Implementation of Online Neuropsychological Tasks using JavaScript" \\
-										\vline & \textbf{Thesis supervision:} Prof. Linda Richards AO, Dr. Ryan Dean, Mr. Richard Thomas \\
-										\vline & \textbf{GPA:} 6.67 \\
-										\vline & \\
-										
-	\textbf{Research Experience} 	  	\vline & \textbf{Washington University in St. Louis - Software Engineer II} \\
-										\vline & \textit{September 2021 - Present} \\
-										\vline & Member of the \textit{Brain Development and Disorders Laboratory} and continuing to enable scientific investigation by innovating novel techniques for implementing complex and reliable cognitive tasks online. Primary research interests include the integration of modern web tools with online cognitive tasks and the optimization of software development processes to enable reproducible and reliable data collection using online tasks. Responsible for the entire software development life-cycle. \\ 
-										\vline & \\
-										
-										\vline & \textbf{Queensland Brain Institute - Research Assistant} \\
-										\vline & \textit{January 2021 - September 2021} \\
-										\vline & Member of the \textit{Brain Development and Disorders Laboratory}, implemented three multi-platform cognitive tasks using JavaScript and modern software development tools. Assisted with task administration and liaised with participants. Responsible for the entire software development life-cycle and worked independently with scientific specialists. \\ 
-										\vline & \\
-										\vline & \textbf{CSIRO – Research Assistant} \\
- 										\vline & \textit{June 2019 – July 2019} \\
- 										\vline & Developed a prototype geospatial web application using JavaScript. Required to understand the agricultural context and UX requirements of the end-users from subject-matter experts. \\
- 										\vline & \\
-										
-	\textbf{Teaching Experience} 	  	\vline & \textbf{The University of Queensland - Casual Academic} \\
-										\vline & \textit{January 2019 - Present} \\
-										\vline & \textbf{CSSE1001 - Introduction to Software Engineering} \\
-										\vline & Introduced students to Python and Object-Oriented Programming concepts. \\
-										\vline & \\
-										\vline & \textbf{DECO2800 - Design Computing Studio 2} \\
-										\vline & Organized and managed groups of students working on a large-scale collaborative Java software project using GitLab. \\
-										\vline & \\
-										\vline & \textbf{CSSE3012 - The Software Process} \\
-										\vline & Introduced students to the software development life-cycle. \\
-										\vline & \\
-										\vline & \textbf{COMP4500 - Advanced Algorithms and Data Structures} \\
-										\vline & Assisted in marking final exams covering advanced computer science concepts such as runtime complexity, computational complexity, and dynamic programming. \\
-										\vline & \\
-										\vline & \\
+											& \large\textbf{Queensland Brain Institute (Research Assistant)} \\
+											& \textit{January 2021 - September 2021} \\
+											& Member of the \textit{Brain Development and Disorders Laboratory}, implemented three multi-platform cognitive tasks using JavaScript and modern software development tools. Assisted with task administration and liaised with participants. Responsible for the entire software development life-cycle and worked independently with scientific specialists. \\ 
+											& \\
 
-	\textbf{Memberships} 	  			\vline & \textbf{International Research Consortium for the
-Corpus Callosum and Cerebral Connectivity (IRC\textsuperscript{5})} \\
-										\vline & \textit{Associate member, Neuropsychology} \\ 
-										\vline & \\
-										
-										\vline & \textbf{Engineers Australia} \\
-										\vline & \textit{Graduate member} \\ 
-%										\vline & \\
-										
-	\textbf{Honors and Awards}			\vline & \textbf{Hawken Scholar (2020)} \\
-										\vline & Academic achievement recognised for 2020. Academic performance was in the top 5\% of all undergraduate Engineering students at the University of Queensland in 2020. \\
-										\vline & \\
-										\vline & \textbf{UQ Future Leader (Class of 2021)} \\
-										\vline & Nominated and awarded as a `Class of 2021' Future Leader, recognising students who have gone beyond their typical program of studies to make a positive impact on campus, their community and even the world. \\
-										\vline & \\	
+											& \large\textbf{CSIRO (Research Assistant)} \\
+	 										& \textit{June 2019 – July 2019} \\
+	 										& Developed a prototype geospatial web application using JavaScript. Required to understand the agricultural context and UX requirements of the end-users from subject-matter experts. \\
+	 										& \\
 
-										\vline & \textbf{Dean's Commendation for Academic Excellence} \\
-										\vline & Academic achievement recognised for Semester 1 and 2, 2019. Qualification for each award required a semester GPA greater than 6.6 on a 7-point scale. \\
-										\vline & \\
+		\large\textbf{Teaching Experience}	& \large\textbf{The University of Queensland (Casual Academic)} \\
+											& \textit{January 2019 - Present} \\
+											& \textbf{CSSE1001 (Introduction to Software Engineering)} \\
+											& Introduced students to Python and Object-Oriented Programming concepts. \\
+											& \\
 
-	\textbf{Service and}				\vline & \textbf{CARE STL} \\
-	\textbf{Outreach}					\vline & I currently volunteer time on my weekends with CARE STL, ensuring cats at the shelter have appropriate food, water, and mental stimulation while I interact with potential adoptive individuals. \\		
-										\vline & \\		
-										\vline & \textbf{Consultant – 180 Degrees Consulting (The University of Queensland branch)} \\
-										\vline & As a Consultant for 180 Degrees Consulting (The University of Queensland branch), I worked on a project for a non-profit clothing brand benefitting Indigenous Australians. My primary responsibilities related to developing a PR strategy during COVID-19 and optimising operational strategies. I was required to meet regularly with my team to discuss progress and present deliverables to the client. \\	
-										\vline & \\
+											& \textbf{DECO2800 (Design Computing Studio 2)} \\
+											& Organized and managed groups of students working on a large-scale collaborative Java software project using GitLab. \\
+											& \\
 
-	\textbf{Skills and}					\vline & \textbf{Front-End Development} \\
-	\textbf{Experience}					\vline & TypeScript, React, Jest, Webpack, Yarn \\
-										\vline & \\
-										\vline & \textbf{Research and Data Management} \\
-										\vline & R, REDCap, Microsoft Azure \\
-										\vline & \\
+											& \textbf{CSSE3012 (The Software Process)} \\
+											& Introduced students to the software development life-cycle. \\
+											& \\
 
-\textbf{Industry Experience} 	  		\vline & \textbf{Deswik Mining Consultants – Software Intern} \\
-										\vline & \textit{January 2020 – February 2020} \\
-										\vline & Worked in the \textit{Deswik.Sched} product development team delivering bug fixes, UI enhancements, and maintenance. Gained experience with tools such as Visual Studio 2019, programming in C\#. Worked in an Agile environment, participating in daily stand-up meetings and sprint retrospectives, using Atlassian’s Confluence and Jira to manage my workflow. \\ 
-										\vline & \\
+											& \textbf{COMP4500 (Advanced Algorithms and Data Structures)} \\
+											& Assisted in marking final exams covering advanced computer science concepts such as runtime complexity, computational complexity, and dynamic programming. \\
+											& \\
 
-										\vline & \textbf{Dalian Neusoft University of Information} \\
-										\vline & \textit{June 2018 – July 2018} \\
-										\vline & Travelled to Dalian, China to participate in an innovation and entrepreneurship program facilitated under the Australian Government’s New Columbo Plan. Worked in a small team of Chinese and Australian students to deliver a prototype and business plan for an app. \\
-%										\vline & \\						
-							     
+		\large\textbf{Memberships} 	  		& \large\textbf{International Research Consortium for the Corpus Callosum and Cerebral Connectivity (IRC\textsuperscript{5})} \\
+											& \textit{Associate member, Neuropsychology} \\ 
+											& \\
+
+											& \large\textbf{Engineers Australia} \\
+											& \textit{Graduate member} \\
+
+											\pagebreak
+
+		\large\textbf{Honors and Awards}	& \large\textbf{UQ Future Leader (Class of 2021)} \\
+											& Nominated and awarded as a `Class of 2021' Future Leader, recognising students who have gone beyond their typical program of studies to make a positive impact on campus, their community and even the world. \\
+											& \\
+
+											& \large\textbf{Dean's Commendation for Academic Excellence (2019, 2021)} \\
+											& Academic achievement recognised for Semester 1 and 2, 2019, and Semester 1, 2021. Qualification for each award required a semester GPA greater than 6.6 on a 7-point scale. \\
+											& \\
+
+											& \large\textbf{Hawken Scholar (2020)} \\
+											& Academic achievement recognised for 2020. Academic performance was in the top 5\% of all undergraduate Engineering students at the University of Queensland in 2020. \\
+											& \\
+
+		\large\textbf{Service and Outreach}	& \large\textbf{CARE STL} \\
+											& I currently volunteer time on my weekends with CARE STL, ensuring cats at the shelter have appropriate food, water, and mental stimulation while I interact with potential adoptive individuals. \\	
+											& \\
+
+											& \large\textbf{180 Degrees Consulting} \\
+											& As a Consultant for 180 Degrees Consulting (The University of Queensland branch), I worked on a project for a non-profit clothing brand benefitting Indigenous Australians. My primary responsibilities related to developing a PR strategy during COVID-19 and optimising operational strategies. I was required to meet regularly with my team to discuss progress and present deliverables to the client. \\	
+											& \\
+
+		\large\textbf{Skills and Experience}& \large\textbf{Front-End Development} \\
+											& TypeScript, React, Jest, Webpack, Yarn \\
+											& \\
+
+											& \large\textbf{Development Tools} \\
+											& Git version control \\
+											& \\
+
+											& \large\textbf{Research and Data Management} \\
+											& R, REDCap, Microsoft Azure \\
+											& \\
+
+		\large\textbf{Industry Experience} 	& \large\textbf{Deswik Mining Consultants – Software Intern} \\
+											& \textit{January 2020 – February 2020} \\
+											& Worked in the \textit{Deswik.Sched} product development team delivering bug fixes, UI enhancements, and maintenance. Gained experience with tools such as Visual Studio 2019, programming in C\#. Worked in an Agile environment, participating in daily stand-up meetings and sprint retrospectives, using Atlassian’s Confluence and Jira to manage my workflow. \\ 
+											& \\
+
+											& \large\textbf{Dalian Neusoft University of Information} \\
+											& \textit{June 2018 – July 2018} \\
+											& Travelled to Dalian, China to participate in an innovation and entrepreneurship program facilitated under the Australian Government’s New Columbo Plan. Worked in a small team of Chinese and Australian students to deliver a prototype and business plan for an app. \\
+
+											\pagebreak
+
+		\large\textbf{References} 	  		& \large\textbf{Linda J. Richards AO, FAA, FAHMS, PhD} \\
+											& \textit{Chair, Department of Neuroscience and Edison Professor of Neuroscience} \\
+											& \textbf{Email:} \href{mailto:linda.richards@wustl.edu}{linda.richards@wustl.edu} \\
+											& Washington University in St. Louis \\
+											& \\
+
+											& \large\textbf{Ryan Dean, PhD} \\
+											& \textit{Staff Scientist} \\
+											& Washington University in St. Louis \\
+											& \textbf{Email:} \href{mailto:ryan.dean@wustl.edu}{ryan.dean@wustl.edu} \\
+											& \\
+
+											& \large\textbf{Joe Barnby, PhD} \\
+											& \textit{Assistant Professor / Lecturer} \\
+											& Royal Holloway, University of London \\
+											& \textbf{Email:} \href{mailto:Joseph.Barnby@rhul.ac.uk}{Joseph.Barnby@rhul.ac.uk} \\
 	\end{longtable}
-
 \end{document}
