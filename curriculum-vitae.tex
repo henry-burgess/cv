@@ -4,15 +4,13 @@
 
 %% Setup packages
 \usepackage{geometry}
-\geometry{a4paper, portrait, margin=0.5in}
+\geometry{letterpaper, portrait, margin=0.6in}
 
+\usepackage[table]{xcolor}
 \usepackage{longtable}
 
-\usepackage{hyperref}
-\hypersetup{
-	colorlinks=false,    
-	urlcolor=black,
-}
+%% Create the light grey shading for the left column
+\definecolor{LeftColumn}{HTML}{F5F5F5}
 
 \begin{document}
 	%%	Header section with name and contact details
@@ -29,16 +27,21 @@
 		\textbf{Email:} henryjburg@gmail.com \\
 		\textbf{ORCID:} 0000-0002-3481-952X
 	\end{minipage}
+
 	%%	Begin tabulated layout
-	\begin{longtable}{r | p{13cm}} 	
+	\begin{longtable}{>{\columncolor{LeftColumn}}r | p{13cm}}
+											\hline \\
+		%% Education
 		\large\textbf{Education} 		  	& \large\textbf{Bachelor of Engineering (Software) (Honours Class I)} \\
 											& \textbf{The University of Queensland (Brisbane, Australia)} \\
 											& \textit{January 2017 – June 2021} \\
 											& \textbf{Thesis title:} ``Implementation of Online Neuropsychological Tasks using JavaScript" \\
 											& \textbf{Thesis supervision:} Prof. Linda Richards AO, Dr. Ryan Dean, Mr. Richard Thomas \\
-											& \textbf{GPA (4-point scale):} 3.81 \\
+											& \textbf{GPA (4-point scale):} 3.66 \\
 											& \\
+											\hline \\
 
+		%% Research Experience
 		\large\textbf{Research Experience}  & \large\textbf{Washington University in St. Louis (Software Engineer II)} \\
 											& \textit{September 2021 - Present} \\
 											& Member of the \textit{Brain Development and Disorders Laboratory} and continuing to enable scientific investigation by developing novel techniques for implementing complex and reliable cognitive tasks online. Primary research interests include the integration of modern web tools with online cognitive tasks and the optimization of software development processes to enable reproducible and reliable data collection. \\ 
@@ -53,7 +56,9 @@
 	 										& \textit{June 2019 – July 2019} \\
 	 										& Developed a prototype geospatial web application using JavaScript. Required to understand the agricultural context and UX requirements of the end-users from subject-matter experts. \\
 	 										& \\
+	 										\hline \\
 
+		%% Teaching Experience				
 		\large\textbf{Teaching Experience}	& \large\textbf{The University of Queensland (Casual Academic)} \\
 											& \textit{Semester 1, 2022} \\
 											& \textbf{CSSE3012 (The Software Process)} \\
@@ -67,25 +72,32 @@
 
 											& \textit{Semester 2, 2019 - Semester 2, 2021} \\
 											& \textbf{DECO2800 (Design Computing Studio 2)} \\
-											& Organized and supervised multiple teams of 6 students working on a large-scale collaborative Java software project using GitLab. \\
+											& Organized and supervised multiple teams of 6 students working on a large-scale collaborative Java software project using version control systems. \\
 											& \\
 											
 											& \textit{Semester 1, 2019 - Semester 1, 2021 } \\
 											& \textbf{CSSE1001 (Introduction to Software Engineering)} \\
 											& Introduced students to Python and Object-Oriented Programming concepts. \\
 											& \\
+											\hline
 
+											\pagebreak
+
+											\hline \\
+
+		%% Memberships
 		\large\textbf{Memberships} 	  		& \large\textbf{International Research Consortium for the Corpus Callosum and Cerebral Connectivity (IRC\textsuperscript{5})} \\
 											& \textit{Associate member, Neuropsychology} \\ 
 											& \\
 
 											& \large\textbf{Engineers Australia} \\
 											& \textit{Graduate member} \\
+											& \\
+											\hline \\
 
-											\pagebreak
-
+		%% Honors and Awards
 		\large\textbf{Honors and Awards}	& \large\textbf{UQ Future Leader (Class of 2021)} \\
-											& Nominated and awarded as a `Class of 2021' Future Leader, recognising students who have gone beyond their typical program of studies to make a positive impact on campus, their community and even the world. Awarded to only 5\% of the 10,000 graduates of the University of Queensland each year.  \\
+											& Nominated and awarded as a `Class of 2021' Future Leader, recognising students who have gone beyond their typical program of studies to make a positive impact on campus, their community and even the world.  \\
 											& \\
 
 											& \large\textbf{Hawken Scholar (2020)} \\
@@ -95,25 +107,34 @@
 											& \large\textbf{Dean's Commendation for Academic Excellence (2019, 2021)} \\
 											& Academic achievement recognised for Semester 1 and 2, 2019, and Semester 1, 2021. Qualification for each award required a semester GPA greater than 6.6 on a 7-point scale. \\
 											& \\
-											
+											\hline \\
+
+		%% Industry Experience
 		\large\textbf{Industry Experience} 	& \large\textbf{Deswik Mining Consultants – Software Intern (Brisbane, Australia)} \\
 											& \textit{January 2020 – February 2020} \\
-											& Worked in the \textit{Deswik.Sched} product development team delivering bug fixes, UI enhancements, and maintenance. Gained experience with tools such as Visual Studio 2019, programming in C\#. Worked in an Agile environment, participating in daily stand-up meetings and sprint retrospectives, using Atlassian’s Confluence and Jira to manage my workflow. \\ 
+											& Worked in the \textit{Deswik.Sched} product development team delivering bug fixes, UI enhancements, and maintenance. Gained experience with Visual Studio 2019 and the C\# programming language. Worked in an Agile environment, participated in daily stand-up meetings and sprint retrospectives, and used Atlassian’s Confluence and Jira to manage workflow. \\ 
 											& \\
 
 											& \large\textbf{Dalian Neusoft University of Information (Dalian, Liaoning province, China)} \\
 											& \textit{June 2018 – July 2018} \\
-											& Travelled to Dalian to participate in an innovation and entrepreneurship program facilitated under the Australian Government’s New Columbo Plan. Worked in a small team of Chinese and Australian students to deliver a prototype and business plan for an app. \\
+											& Received a grant and traveled to Dalian, China to participate in an innovation and entrepreneurship program facilitated under the Australian Government’s New Columbo Plan. \\
 											& \\
+											\hline \\
+
+		%% Service and Outreach
+		\large\textbf{Service and Outreach} & \large\textbf{CARE STL} \\
+											& Currently volunteering time on weekends at CARE STL, ensuring shelter cats have sufficient food, water, and mental stimulation while awaiting adoption. \\	
+											& \\
+
+											& \large\textbf{180 Degrees Consulting (The University of Queensland branch)} \\
+											& Worked on a project for a non-profit clothing brand benefiting Indigenous Australians. Primary responsibilities included developing a PR strategy during the COVID-19 pandemic and optimizing operational strategies. Required to meet weekly with consulting team to discuss progress and present deliverables to the client. \\	
+											& \\
+											\hline
 											
-		\large\textbf{Service and outreach} & \large\textbf{CARE STL} \\
-											& I currently volunteer time on my weekends with CARE STL, ensuring cats at the shelter have appropriate food, water, and mental stimulation while I interact with prospective adopters. \\	
-											& \\
+											\pagebreak
 
-											& \large\textbf{180 Degrees Consulting} \\
-											& As a Consultant for 180 Degrees Consulting (The University of Queensland branch), I worked on a project for a non-profit clothing brand benefitting Indigenous Australians. My primary responsibilities related to developing a PR strategy during COVID-19 and optimising operational strategies. I was required to meet regularly with my team to discuss progress and present deliverables to the client. \\	
-											& \\
-
+											\hline \\
+		%% Publications
 		\large\textbf{Publications}			& \large\textbf{General Audience} \\
 		\large\textit{2022}					& \large\textit{Australian Disorders of the Corpus Callosum (AusDoCC) Newsletter} \\
 											& Wrote an article ``Online Research and Web Accessibility" submitted and published to the ``From our researchers..." column of the May 2022 AusDoCC newsletter. \\	
@@ -126,9 +147,13 @@
 											& \large\textbf{Peer-reviewed and Preprint} \\
 											& Richards, L. J., Barnby, J., Dean, R., \textbf{Burgess, H.}, Kim, J., Teunisse, A., ... \& Dayan, P. (2021). Increased persuadability and credulity in people with corpus callosum dysgenesis. \textit{medRxiv}. \\
 											& https://doi.org/10.1101/2021.12.28.21268413 \\
+											& \\
+											\hline
 
 											\pagebreak
 
+											\hline \\
+		%% References
 		\large\textbf{References} 	  		& \large\textbf{Linda J. Richards AO, FAA, FAHMS, PhD} \\
 											& \textit{Chair, Department of Neuroscience and Edison Professor of Neuroscience} \\
 											& Washington University in St. Louis \\
@@ -145,5 +170,7 @@
 											& \textit{Assistant Professor / Lecturer} \\
 											& Royal Holloway, University of London \\
 											& \textbf{Email:} Joseph.Barnby@rhul.ac.uk \\
+											& \\
+											\hline
 	\end{longtable}
 \end{document}
