@@ -5,6 +5,7 @@
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{geometry}
+\usepackage{verbatim}
 \geometry{letterpaper, portrait, margin=0.6in}
 
 % Paragraph spacing
@@ -13,31 +14,30 @@
 
 \begin{document}
   %  Header section with name and contact details
-  {\Huge\textbf{\uppercase{Henry Burgess}}} \hfill \begin{minipage}{0.26\linewidth}
+  \begin{center}
+    {\huge\textbf{\uppercase{Henry Burgess}}}
 
-  \textbf{Phone:} \hfill +1 (314) 891-2285
+    St. Louis, Missouri, United States
 
-  \textbf{Email:} \hfill henryjburg@gmail.com
+    henryjburg@gmail.com, +1 (314) 891-2285
+  \end{center}
 
-  \textbf{LinkedIn:} \hfill @henryjburg
+  \smallbreak
 
-  \textbf{GitHub:} \hfill @henryjburg
-
-  \end{minipage}
-
-  \medbreak
-
+  % Introduction Statement
+  \begin{comment}
   Highly adaptable Software Engineer with over two years of full-stack development experience, currently residing in St. Louis, United States.
   Sponsored to relocate from Australia and work for the Department of Neuroscience at Washington University School of Medicine in St. Louis.
   Working on advancing online behavioral and cognitive testing capabilities and large-scale scientific metadata management. Effective presentation and communication skills across functions and in professional forums.
   Seeking a role delivering objectives towards positive societal development, allowing personal investment in professional and technical capabilities within the United States.
+  \end{comment}
 
   % Education
   \section*{\centering\uppercase{Education}}
 
   {\large\textbf{Bachelor of Engineering (Hons.) (Software)}}
 
-  \medbreak
+  \smallbreak
 
   \textbf{The University of Queensland} \hfill \textit{Brisbane, Australia}
 
@@ -51,7 +51,7 @@
 
   \textbf{Awards and Honors:} UQ Future Leader (Class of 2021), Hawken Scholar (2020), Dean's commendation for academic excellence (2019, 2021)
 
-  \medbreak
+  \smallbreak
 
   \textbf{Dalian Neusoft University of Information} \hfill \textit{Dalian, China}
 
@@ -59,18 +59,19 @@
 
   Awarded a travel grant to attend and participate in an innovation and entrepreneurship program facilitated by the Australian Government's New Columbo Plan.
 
+
   % Professional Experience
   \section*{\centering\uppercase{Professional Experience}}
 
-  {\large\textbf{Washington University School of Medicine in St. Louis \hfill Software Engineer II}}
+  {\large\textbf{Software Engineer II \hfill Washington University School of Medicine in St. Louis}}
 
   \textit{September 2021 - Present \hfill St. Louis, United States}
 
-Designed, deployed, and maintained a full-stack web application to handle thousands of scientific metadata records using React, GraphQL, and MongoDB. Awarded a Schmidt Futures Virtual Institute for Scientific Software partnership with Georgia Tech. Implemented 2 full-stack web applications using TypeScript, React, and RESTful API design to present scientific stimuli, collecting data from 50 research participants online across 3 continents. Developed multiple VR applications for the Meta Quest platform using WebXR or Unity. Deployed applications and collected behavioral and eye-tracking data from 30 research participants. Ownership of the software development lifecycle, working within a cross-functional scientific team. Presented projects at conferences across the US and featured in 2 scientific publications.
+Designed, deployed, and maintained a full-stack web application to handle thousands of scientific metadata records using React, GraphQL, and MongoDB. Implemented 2 full-stack web applications using TypeScript, React, and RESTful API design to present scientific stimuli, collecting data from 50 research participants online across 3 continents. Developed multiple VR applications for the Meta Quest platform using WebXR or Unity. Deployed applications and collected behavioral and eye-tracking data from 30 research participants. Ownership of the software development lifecycle, working within a cross-functional scientific team. Presented projects at conferences across the US and featured in 2 scientific publications.
 
-  \medbreak
+  \smallbreak
 
-  {\large\textbf{The University of Queensland \hfill Teaching Assistant}}
+  {\large\textbf{Teaching Assistant \hfill The University of Queensland}}
 
   \textit{January 2019 - June 2022 \hfill Brisbane, Australia}
 
@@ -84,72 +85,49 @@ Taught fundamentals of Software Engineering and collaboration, worked alongside 
 
   \textbf{DECO2800 (Design Computing Studio 2):} Java; Project Management; CI/CD
 
-  \medbreak
+  \smallbreak
 
-  {\large\textbf{Queensland Brain Institute \hfill Research Assistant}}
+  {\large\textbf{Research Assistant \hfill Queensland Brain Institute}}
 
   \textit{January 2021 - September 2021 \hfill Brisbane, Australia}
 
 Implemented and delivered 3 frontend applications using WebGL and JavaScript, collecting behavioral data using these applications from 20 participants in-person and online.
 
-  \pagebreak
+  \smallbreak
 
-  {\large\textbf{Deswik (Sandvik Group Member) \hfill Software Intern}}
+  {\large\textbf{Software Intern \hfill Deswik (Sandvik Group Member)}}
 
   \textit{January 2020 - February 2020 \hfill Brisbane, Australia}
 
   Delivered bug fixes, interface enhancements, and general maintenance in the \textit{Deswik.Sched} product development team. Used Visual Studio 2019 and C\# in an Agile environment, participated in daily stand-up meetings and sprint retrospectives. Used Atlassian's Confluence and Jira to manage workflow. Received return offer upon graduation.
 
-  \medbreak
+  \pagebreak
 
-  {\large\textbf{CSIRO \hfill Research Assistant}}
+  \begin{comment}
+  {\large\textbf{Research Assistant \hfill CSIRO}}
 
   \textit{June 2019 - July 2019 \hfill Brisbane, Australia}
 
   Developed a geospatial web application prototype using Google satellite imagery and JavaScript. Required to understand an agricultural context and UX requirements of end-users from subject-matter experts.
-
-  % Projects
-  \section*{\centering\uppercase{Projects}}
-
-  \textbf{Metadatify}
-
-  Open-source scientific metadata management web application used to manage large and diverse collections of metadata. Allows metadata to be imported and exported for tracking purposes. Users can create workspaces for managing metadata and can collaborate within workspaces. Supports ORCiD authentication.
-
-  \textit{Tools: React, TypeScript, Webpack, Node.js, GraphQL, Express.js, MongoDB, Docker}
-
-  \medbreak
-
-  \textbf{Dynamic Cognitive Tasks}
-
-  Architecture to support advanced computations or modeling for primarily online cognitive research tasks, facilitating dynamic behavior and novel responses to participant input.
-
-  \textit{Tools: Docker, R, MATLAB}
-
-  \medbreak
-
-  \textbf{jspsych-attention-check}
-
-  jsPsych plugin using TypeScript to present multiple-choice questions to participants completing behavioral and cognitive research tasks online. Ensures participant attention is retained, improving the data quality and reproducibility of online research.
-
-  \textit{Tools: jsPsych, TypeScript, Webpack}
-
-  \medbreak
-
-  \textbf{Neurocog.js}
-
-  JavaScript package augmenting the functionality of jsPsych-based behavioral and cognitive research tasks. Facilitates integration with online platforms and streamlines developer and researcher experience when deploying research tasks online.
-
-  \textit{Tools: jsPsych, TypeScript, Jest, Webpack}
+  \end{comment}
 
   % Publications
   \section*{\centering\uppercase{Publications}}
 
-  {\large\textbf{Peer-reviewed}}
+  {\large\textbf{Peer-Reviewed}}
 
   Richards, L. J., Barnby, J., Dean, R., \textbf{Burgess, H.}, Kim, J., Teunisse, A., ... \& Dayan, P. (2021). Increased persuadability and credulity in people with corpus callosum dysgenesis. \textit{Cortex}.
-  https://doi.org/10.1016/j.cortex.2022.07.009
+  \href{https://doi.org/10.1016/j.cortex.2022.07.009}{https://doi.org/10.1016/j.cortex.2022.07.009}
 
-  \medbreak
+  \smallbreak
+
+  {\large\textbf{Pre-Print}}
+
+  Barnby, J. M., Nguyen, J., Griem, J., Wloszek, M., \textbf{Burgess, H.}, Richards, L., ... \& Fonagy, P. (2024). Self-Other Generalisation Shapes Social Interaction and Is Disrupted in Borderline Personality Disorder.
+
+  \href{https://doi.org/10.31234/osf.io/kcwm8}{https://doi.org/10.31234/osf.io/kcwm8}
+
+  \smallbreak
 
   {\large\textbf{Conference Presentations}}
 
@@ -159,7 +137,7 @@ Implemented and delivered 3 frontend applications using WebGL and JavaScript, co
 
   ``Realizing Dynamic Cognitive Tasks with Cloud-based Computation" \hfill \textit{2023}
 
-  \medbreak
+  \smallbreak
 
   \textbf{IRC\textsuperscript{5} Meeting}
 
@@ -167,54 +145,82 @@ Implemented and delivered 3 frontend applications using WebGL and JavaScript, co
 
  ``Enabling behavioural research with Computer Science" \hfill \textit{2022}
 
-  \medbreak
+  \smallbreak
 
   \textbf{Cognitive Neuroscience Society Meeting}
 
   ``Realizing Dynamic Cognitive Tasks with Cloud-based Computation" \hfill \textit{2023}
 
-  \medbreak
+  \smallbreak
 
   \textbf{Society for Neuroscience}
 
   ``Neurocog.js; A new tool for running cognitive experiments in both lab and online environments." \hfill \textit{2022}
 
-  \pagebreak
+  % Awards
+  \section*{\centering\uppercase{Awards}}
+
+  \textbf{Schmidt Futures} \hfill \textit{2023 - 2024}
+
+  Virtual Institute for Scientific Software (VISS) partnership with the Scientific Software Engineering Center at Georgia Institute of Technology.
+
+  % Projects
+  \section*{\centering\uppercase{Projects}}
+
+  \textbf{Metadatify} \hfill \href{https://metadatify.com}{Metadatify}, \href{https://github.com/Brain-Development-and-Disorders-Lab/mars}{GitHub}
+
+  Open-source scientific metadata management web application used to manage large and diverse collections of metadata. Allows metadata to be imported and exported for tracking purposes. Users can create workspaces for managing metadata and can collaborate within workspaces. Supports ORCiD authentication.
+
+  \begin{comment}
+  \textit{Tools: React, TypeScript, Webpack, Node.js, GraphQL, Express.js, MongoDB, Docker}
+  \end{comment}
+
+  \smallbreak
+
+  \textbf{Dynamic Cognitive Tasks} \hfill \href{https://github.com/Brain-Development-and-Disorders-Lab/task_template_dynamic}{GitHub}
+
+  Architecture to support advanced computations or modeling for primarily online cognitive research tasks, facilitating dynamic behavior and novel responses to participant input.
+
+  \begin{comment}
+  \textit{Tools: Docker, R, MATLAB}
+  \end{comment}
 
   % Memberships
   \section*{\centering\uppercase{Memberships}}
-
-  {\textbf{Society for Neuroscience}}
-
-  \textit{Regular Member \hfill 2022 - Present}
-
-  \medbreak
-
-  {\textbf{Cognitive Neuroscience Society}}
-
-  \textit{Graduate Member \hfill 2022 - Present}
-
-  \medbreak
 
   {\textbf{The United States Research Software Engineer Association (US-RSE)}}
 
   \textit{Member \hfill 2022 - Present}
 
-  \medbreak
+  \smallbreak
 
   {\textbf{International Research Consortium for the Corpus Callosum and Cerebral Connectivity (IRC\textsuperscript{5})}}
 
   \textit{Associate member, Neuropsychology \hfill 2021 - Present}
 
-  \medbreak
+  \smallbreak
+
+  {\textbf{Society for Neuroscience}}
+
+  \textit{Regular Member \hfill 2022 - 2023}
+
+  \smallbreak
+
+  {\textbf{Cognitive Neuroscience Society}}
+
+  \textit{Graduate Member \hfill 2022 - 2023}
+
+  \smallbreak
 
   {\textbf{Engineers Australia}}
 
-  \textit{Graduate Member \hfill 2021 - Present}
+  \textit{Graduate Member \hfill 2021 - 2024}
 
   % Personal Life
+  \begin{comment}
   \section*{\centering\uppercase{Personal Life}}
 
   Outside of work, I appreciate a variety of outdoor hobbies including backpacking and running. While in the USA, I have taken the opportunity to explore Yosemite and Joshua Tree National Parks and have hiked to the summit of Mt. Whitney (14,505ft). Completing my first half-marathon in 2022, I enjoy running both as a hobby and stress-reliever around the expansive Forest Park in my current home of St. Louis. Cooking is an everyday hobby that I enjoy after returning home from work, and I often enjoy the opportunity to cook and host for others.
+  \end{comment}
 
 \end{document}
